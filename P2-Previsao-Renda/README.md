@@ -38,8 +38,9 @@ O principal objetivo deste projeto é criar um modelo preditivo para estimar a r
 
 Esse projeto também acompanha um Dashboard dinâmico feito no streamlit, no arquivo `projeto_2.py`. Veja o vídeo abaixo com a demonstração:
 
-[Demonstração](https://github.com/brunoperdigao/Projetos-EBAC-Cientista-de-Dados/blob/main/P2-Previsao-Renda/streamlit-projeto_2-2023-12-29-12-12-21.webm)
-[Uploading streamlit-projeto_2-2023-12-29-12-12-21.webm…]()
+https://github.com/brunoperdigao/Projetos-EBAC-Cientista-de-Dados/assets/57102715/dec8b7fa-4c29-41ae-ac6f-373324f03ffe
+
+
 
 
 
