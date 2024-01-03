@@ -1,0 +1,2343 @@
+2024-01-03 10:48:08,913:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 10:48:08,913:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 10:48:08,913:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 10:48:08,913:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 10:48:11,136:INFO:PyCaret ClassificationExperiment
+2024-01-03 10:48:11,136:INFO:Logging name: clf-default-name
+2024-01-03 10:48:11,136:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-01-03 10:48:11,136:INFO:version 3.2.0
+2024-01-03 10:48:11,136:INFO:Initializing setup()
+2024-01-03 10:48:11,136:INFO:self.USI: 0fc0
+2024-01-03 10:48:11,136:INFO:self._variable_keys: {'gpu_param', 'USI', 'y', 'y_train', 'X_train', 'fold_groups_param', 'logging_param', 'target_param', 'is_multiclass', 'n_jobs_param', 'idx', '_available_plots', 'X_test', '_ml_usecase', 'exp_name_log', 'y_test', 'exp_id', 'memory', 'pipeline', 'X', 'gpu_n_jobs_param', 'fold_generator', 'fix_imbalance', 'seed', 'fold_shuffle_param', 'data', 'log_plots_param', 'html_param'}
+2024-01-03 10:48:11,136:INFO:Checking environment
+2024-01-03 10:48:11,136:INFO:python_version: 3.10.7
+2024-01-03 10:48:11,136:INFO:python_build: ('tags/v3.10.7:6cc6b13', 'Sep  5 2022 14:08:36')
+2024-01-03 10:48:11,136:INFO:machine: AMD64
+2024-01-03 10:48:11,136:INFO:platform: Windows-10-10.0.19045-SP0
+2024-01-03 10:48:11,174:INFO:Memory: svmem(total=17071636480, available=5516660736, percent=67.7, used=11554975744, free=5516660736)
+2024-01-03 10:48:11,174:INFO:Physical Core: 4
+2024-01-03 10:48:11,174:INFO:Logical Core: 8
+2024-01-03 10:48:11,174:INFO:Checking libraries
+2024-01-03 10:48:11,174:INFO:System:
+2024-01-03 10:48:11,174:INFO:    python: 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]
+2024-01-03 10:48:11,174:INFO:executable: D:\Python-Venvs\win-data-science\Scripts\python.exe
+2024-01-03 10:48:11,174:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-01-03 10:48:11,174:INFO:PyCaret required dependencies:
+2024-01-03 10:48:11,174:INFO:                 pip: 23.3.2
+2024-01-03 10:48:11,174:INFO:          setuptools: 67.6.1
+2024-01-03 10:48:11,174:INFO:             pycaret: 3.2.0
+2024-01-03 10:48:11,174:INFO:             IPython: 8.10.0
+2024-01-03 10:48:11,174:INFO:          ipywidgets: 8.0.4
+2024-01-03 10:48:11,174:INFO:                tqdm: 4.64.1
+2024-01-03 10:48:11,174:INFO:               numpy: 1.23.5
+2024-01-03 10:48:11,174:INFO:              pandas: 1.5.3
+2024-01-03 10:48:11,174:INFO:              jinja2: 3.1.2
+2024-01-03 10:48:11,174:INFO:               scipy: 1.10.1
+2024-01-03 10:48:11,174:INFO:              joblib: 1.2.0
+2024-01-03 10:48:11,174:INFO:             sklearn: 1.2.1
+2024-01-03 10:48:11,174:INFO:                pyod: 1.1.2
+2024-01-03 10:48:11,174:INFO:            imblearn: 0.11.0
+2024-01-03 10:48:11,174:INFO:   category_encoders: 2.6.3
+2024-01-03 10:48:11,174:INFO:            lightgbm: 3.3.5
+2024-01-03 10:48:11,174:INFO:               numba: 0.58.1
+2024-01-03 10:48:11,174:INFO:            requests: 2.28.2
+2024-01-03 10:48:11,174:INFO:          matplotlib: 3.8.2
+2024-01-03 10:48:11,174:INFO:          scikitplot: 0.3.7
+2024-01-03 10:48:11,174:INFO:         yellowbrick: 1.5
+2024-01-03 10:48:11,174:INFO:              plotly: 5.14.0
+2024-01-03 10:48:11,174:INFO:    plotly-resampler: Not installed
+2024-01-03 10:48:11,174:INFO:             kaleido: 0.2.1
+2024-01-03 10:48:11,174:INFO:           schemdraw: 0.15
+2024-01-03 10:48:11,174:INFO:         statsmodels: 0.13.5
+2024-01-03 10:48:11,174:INFO:              sktime: 0.21.1
+2024-01-03 10:48:11,174:INFO:               tbats: 1.1.3
+2024-01-03 10:48:11,174:INFO:            pmdarima: 2.0.4
+2024-01-03 10:48:11,174:INFO:              psutil: 5.9.4
+2024-01-03 10:48:11,174:INFO:          markupsafe: 2.1.2
+2024-01-03 10:48:11,174:INFO:             pickle5: Not installed
+2024-01-03 10:48:11,174:INFO:         cloudpickle: 3.0.0
+2024-01-03 10:48:11,174:INFO:         deprecation: 2.1.0
+2024-01-03 10:48:11,174:INFO:              xxhash: 3.4.1
+2024-01-03 10:48:11,174:INFO:           wurlitzer: 3.0.3
+2024-01-03 10:48:11,174:INFO:PyCaret optional dependencies:
+2024-01-03 10:48:11,205:INFO:                shap: Not installed
+2024-01-03 10:48:11,205:INFO:           interpret: Not installed
+2024-01-03 10:48:11,205:INFO:                umap: Not installed
+2024-01-03 10:48:11,205:INFO:     ydata_profiling: 4.6.3
+2024-01-03 10:48:11,205:INFO:  explainerdashboard: Not installed
+2024-01-03 10:48:11,205:INFO:             autoviz: Not installed
+2024-01-03 10:48:11,205:INFO:           fairlearn: Not installed
+2024-01-03 10:48:11,205:INFO:          deepchecks: Not installed
+2024-01-03 10:48:11,205:INFO:             xgboost: 1.7.4
+2024-01-03 10:48:11,205:INFO:            catboost: Not installed
+2024-01-03 10:48:11,205:INFO:              kmodes: Not installed
+2024-01-03 10:48:11,205:INFO:             mlxtend: Not installed
+2024-01-03 10:48:11,205:INFO:       statsforecast: Not installed
+2024-01-03 10:48:11,205:INFO:        tune_sklearn: Not installed
+2024-01-03 10:48:11,205:INFO:                 ray: Not installed
+2024-01-03 10:48:11,205:INFO:            hyperopt: Not installed
+2024-01-03 10:48:11,205:INFO:              optuna: Not installed
+2024-01-03 10:48:11,205:INFO:               skopt: Not installed
+2024-01-03 10:48:11,205:INFO:              mlflow: Not installed
+2024-01-03 10:48:11,205:INFO:              gradio: Not installed
+2024-01-03 10:48:11,205:INFO:             fastapi: Not installed
+2024-01-03 10:48:11,205:INFO:             uvicorn: Not installed
+2024-01-03 10:48:11,205:INFO:              m2cgen: Not installed
+2024-01-03 10:48:11,205:INFO:           evidently: Not installed
+2024-01-03 10:48:11,205:INFO:               fugue: Not installed
+2024-01-03 10:48:11,205:INFO:           streamlit: 1.28.2
+2024-01-03 10:48:11,205:INFO:             prophet: Not installed
+2024-01-03 10:48:11,205:INFO:None
+2024-01-03 10:48:11,205:INFO:Set up data.
+2024-01-03 10:48:11,252:INFO:Set up folding strategy.
+2024-01-03 10:48:11,252:INFO:Set up train/test split.
+2024-01-03 10:48:11,322:INFO:Set up index.
+2024-01-03 10:48:11,322:INFO:Assigning column types.
+2024-01-03 10:48:11,337:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-01-03 10:48:11,375:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-01-03 10:48:11,375:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 10:48:11,475:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,562:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:12,625:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-01-03 10:48:12,625:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 10:48:12,640:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,656:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:12,656:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-01-03 10:48:12,725:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 10:48:12,753:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,757:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:12,801:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 10:48:12,833:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,837:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:12,837:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-01-03 10:48:12,913:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,917:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:12,997:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:12,997:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:13,012:INFO:Preparing preprocessing pipeline...
+2024-01-03 10:48:13,012:INFO:Set up date feature engineering.
+2024-01-03 10:48:13,012:INFO:Set up simple imputation.
+2024-01-03 10:48:13,028:INFO:Set up encoding of ordinal features.
+2024-01-03 10:48:13,043:INFO:Set up encoding of categorical features.
+2024-01-03 10:48:13,043:INFO:Set up removing outliers.
+2024-01-03 10:48:13,043:INFO:Set up imbalanced handling.
+2024-01-03 10:48:13,043:INFO:Set up column transformation.
+2024-01-03 10:48:13,043:INFO:Set up feature normalization.
+2024-01-03 10:48:13,043:INFO:Set up PCA.
+2024-01-03 10:48:13,899:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:17,046:INFO:Finished creating preprocessing pipeline.
+2024-01-03 10:48:17,115:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Bruno\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pess...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False)
+2024-01-03 10:48:17,115:INFO:Creating final display dataframe.
+2024-01-03 10:48:17,670:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:21,015:INFO:Setup _display_container:                     Description             Value
+0                    Session id              2676
+1                        Target               mau
+2                   Target type            Binary
+3           Original data shape       (36153, 18)
+4        Transformed data shape        (55852, 6)
+5   Transformed train set shape        (45006, 6)
+6    Transformed test set shape        (10846, 6)
+7              Ordinal features                 4
+8              Numeric features                 9
+9                 Date features                 1
+10         Categorical features                 7
+11                   Preprocess              True
+12              Imputation type            simple
+13           Numeric imputation              mean
+14       Categorical imputation              mode
+15     Maximum one-hot encoding                25
+16              Encoding method              None
+17              Remove outliers              True
+18           Outliers threshold              0.05
+19                Fix imbalance              True
+20         Fix imbalance method             SMOTE
+21               Transformation              True
+22        Transformation method          quantile
+23                    Normalize              True
+24             Normalize method            zscore
+25                          PCA              True
+26                   PCA method            linear
+27               PCA components                 5
+28               Fold Generator   StratifiedKFold
+29                  Fold Number                10
+30                     CPU Jobs                -1
+31                      Use GPU             False
+32               Log Experiment             False
+33              Experiment Name  clf-default-name
+34                          USI              0fc0
+2024-01-03 10:48:21,103:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:21,106:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:21,180:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:21,182:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:21,183:INFO:setup() successfully completed in 10.05s...............
+2024-01-03 10:48:21,183:INFO:gpu_param set to False
+2024-01-03 10:48:21,256:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:21,260:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:21,330:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 10:48:21,333:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 10:48:21,356:INFO:Initializing create_model()
+2024-01-03 10:48:21,356:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 10:48:21,356:INFO:Checking exceptions
+2024-01-03 10:48:21,385:INFO:Importing libraries
+2024-01-03 10:48:21,385:INFO:Copying training dataset
+2024-01-03 10:48:21,404:INFO:Defining folds
+2024-01-03 10:48:21,404:INFO:Declaring metric variables
+2024-01-03 10:48:21,408:INFO:Importing untrained model
+2024-01-03 10:48:21,414:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 10:48:21,424:INFO:Starting cross validation
+2024-01-03 10:48:21,442:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 10:48:30,398:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,434:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,454:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,542:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,570:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,662:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:30,870:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:41,637:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:41,657:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:44,917:INFO:Calculating mean and std
+2024-01-03 10:48:44,917:INFO:Creating metrics dataframe
+2024-01-03 10:48:44,927:INFO:Finalizing model
+2024-01-03 10:48:45,419:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:48,130:INFO:Uploading results into container
+2024-01-03 10:48:48,130:INFO:Uploading model into container now
+2024-01-03 10:48:48,151:INFO:_master_model_container: 1
+2024-01-03 10:48:48,151:INFO:_display_container: 2
+2024-01-03 10:48:48,151:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 10:48:48,151:INFO:create_model() successfully completed......................................
+2024-01-03 10:48:48,293:INFO:Initializing tune_model()
+2024-01-03 10:48:48,293:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>)
+2024-01-03 10:48:48,293:INFO:Checking exceptions
+2024-01-03 10:48:48,336:INFO:Copying training dataset
+2024-01-03 10:48:48,352:INFO:Checking base model
+2024-01-03 10:48:48,352:INFO:Base model : Light Gradient Boosting Machine
+2024-01-03 10:48:48,352:INFO:Declaring metric variables
+2024-01-03 10:48:48,352:INFO:Defining Hyperparameters
+2024-01-03 10:48:48,468:INFO:Tuning with n_jobs=-1
+2024-01-03 10:48:48,468:INFO:Initializing RandomizedSearchCV
+2024-01-03 10:48:49,859:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:49,908:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:49,910:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:49,930:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:50,164:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:50,226:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:50,236:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:48:50,277:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:03,098:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:03,114:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:03,598:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:04,102:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:04,114:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:04,770:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:04,941:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:05,312:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:17,791:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:18,230:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:18,781:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:18,852:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:19,678:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:19,902:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:20,647:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:20,991:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:30,655:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:31,432:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:31,453:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:31,718:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:32,147:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:32,679:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:33,097:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:33,291:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:42,188:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:43,553:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:43,933:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:44,644:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:44,701:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:44,953:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:45,471:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:45,993:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:53,249:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:55,255:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:56,167:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:56,199:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:56,698:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:57,772:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:58,251:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:49:58,577:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:08,604:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:08,889:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:10,271:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:10,996:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:11,313:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:12,489:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:12,672:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:12,896:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:21,854:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:21,987:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:24,549:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:25,213:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:26,298:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:26,459:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:27,006:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:28,512:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:35,615:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:36,669:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:39,756:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:39,870:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:40,104:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:41,464:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:42,814:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:42,906:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:47,047:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:47,804:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:51,665:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:52,405:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:52,640:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:53,520:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:57,981:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:50:58,444:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:01,657:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:02,352:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:06,599:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:07,334:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:07,416:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:07,875:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:12,197:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:12,524:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:12,686:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:13,263:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:16,461:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:17,587:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:18,027:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:18,528:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:23,081:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:24,145:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:24,280:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:24,640:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:27,079:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:27,937:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:34,425:INFO:best_params: {'actual_estimator__reg_lambda': 0.3, 'actual_estimator__reg_alpha': 0.005, 'actual_estimator__num_leaves': 150, 'actual_estimator__n_estimators': 230, 'actual_estimator__min_split_gain': 0, 'actual_estimator__min_child_samples': 26, 'actual_estimator__learning_rate': 0.1, 'actual_estimator__feature_fraction': 0.8, 'actual_estimator__bagging_freq': 0, 'actual_estimator__bagging_fraction': 0.4}
+2024-01-03 10:51:34,441:INFO:Hyperparameter search completed
+2024-01-03 10:51:34,441:INFO:SubProcess create_model() called ==================================
+2024-01-03 10:51:34,441:INFO:Initializing create_model()
+2024-01-03 10:51:34,441:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018CB270F9D0>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 0.3, 'reg_alpha': 0.005, 'num_leaves': 150, 'n_estimators': 230, 'min_split_gain': 0, 'min_child_samples': 26, 'learning_rate': 0.1, 'feature_fraction': 0.8, 'bagging_freq': 0, 'bagging_fraction': 0.4})
+2024-01-03 10:51:34,441:INFO:Checking exceptions
+2024-01-03 10:51:34,441:INFO:Importing libraries
+2024-01-03 10:51:34,441:INFO:Copying training dataset
+2024-01-03 10:51:34,457:INFO:Defining folds
+2024-01-03 10:51:34,457:INFO:Declaring metric variables
+2024-01-03 10:51:34,463:INFO:Importing untrained model
+2024-01-03 10:51:34,463:INFO:Declaring custom model
+2024-01-03 10:51:34,463:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 10:51:34,479:INFO:Starting cross validation
+2024-01-03 10:51:34,479:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 10:51:36,046:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,066:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,075:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,117:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,362:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,391:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,414:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:36,403:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:49,952:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:50,145:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:54,592:INFO:Calculating mean and std
+2024-01-03 10:51:54,592:INFO:Creating metrics dataframe
+2024-01-03 10:51:54,602:INFO:Finalizing model
+2024-01-03 10:51:55,132:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:51:58,701:INFO:Uploading results into container
+2024-01-03 10:51:58,701:INFO:Uploading model into container now
+2024-01-03 10:51:58,701:INFO:_master_model_container: 2
+2024-01-03 10:51:58,701:INFO:_display_container: 3
+2024-01-03 10:51:58,701:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2024-01-03 10:51:58,701:INFO:create_model() successfully completed......................................
+2024-01-03 10:51:58,822:INFO:SubProcess create_model() end ==================================
+2024-01-03 10:51:58,822:INFO:choose_better activated
+2024-01-03 10:51:58,830:INFO:SubProcess create_model() called ==================================
+2024-01-03 10:51:58,830:INFO:Initializing create_model()
+2024-01-03 10:51:58,830:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 10:51:58,830:INFO:Checking exceptions
+2024-01-03 10:51:58,830:INFO:Importing libraries
+2024-01-03 10:51:58,830:INFO:Copying training dataset
+2024-01-03 10:51:58,840:INFO:Defining folds
+2024-01-03 10:51:58,840:INFO:Declaring metric variables
+2024-01-03 10:51:58,840:INFO:Importing untrained model
+2024-01-03 10:51:58,840:INFO:Declaring custom model
+2024-01-03 10:51:58,840:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 10:51:58,840:INFO:Starting cross validation
+2024-01-03 10:51:58,856:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 10:52:00,240:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,281:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,291:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,291:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,311:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,352:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,362:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:00,373:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:10,400:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:10,616:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:13,906:INFO:Calculating mean and std
+2024-01-03 10:52:13,906:INFO:Creating metrics dataframe
+2024-01-03 10:52:13,906:INFO:Finalizing model
+2024-01-03 10:52:14,442:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:17,062:INFO:Uploading results into container
+2024-01-03 10:52:17,062:INFO:Uploading model into container now
+2024-01-03 10:52:17,062:INFO:_master_model_container: 3
+2024-01-03 10:52:17,062:INFO:_display_container: 4
+2024-01-03 10:52:17,062:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 10:52:17,062:INFO:create_model() successfully completed......................................
+2024-01-03 10:52:17,163:INFO:SubProcess create_model() end ==================================
+2024-01-03 10:52:17,163:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for AUC is 0.8232
+2024-01-03 10:52:17,163:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0) result for AUC is 0.841
+2024-01-03 10:52:17,163:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0) is best model
+2024-01-03 10:52:17,163:INFO:choose_better completed
+2024-01-03 10:52:17,182:INFO:_master_model_container: 3
+2024-01-03 10:52:17,182:INFO:_display_container: 3
+2024-01-03 10:52:17,182:INFO:LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2024-01-03 10:52:17,182:INFO:tune_model() successfully completed......................................
+2024-01-03 10:52:17,292:INFO:Initializing plot_model()
+2024-01-03 10:52:17,292:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, system=True)
+2024-01-03 10:52:17,292:INFO:Checking exceptions
+2024-01-03 10:52:17,292:INFO:Preloading libraries
+2024-01-03 10:52:17,423:INFO:Copying training dataset
+2024-01-03 10:52:17,423:INFO:Plot type: auc
+2024-01-03 10:52:17,809:INFO:Fitting Model
+2024-01-03 10:52:17,817:INFO:Scoring test/hold-out set
+2024-01-03 10:52:18,244:INFO:Visual Rendered Successfully
+2024-01-03 10:52:18,344:INFO:plot_model() successfully completed......................................
+2024-01-03 10:52:18,364:INFO:Initializing plot_model()
+2024-01-03 10:52:18,364:INFO:plot_model(plot=pr, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, system=True)
+2024-01-03 10:52:18,364:INFO:Checking exceptions
+2024-01-03 10:52:18,376:INFO:Preloading libraries
+2024-01-03 10:52:18,487:INFO:Copying training dataset
+2024-01-03 10:52:18,487:INFO:Plot type: pr
+2024-01-03 10:52:18,956:INFO:Fitting Model
+2024-01-03 10:52:18,971:INFO:Scoring test/hold-out set
+2024-01-03 10:52:19,415:INFO:Visual Rendered Successfully
+2024-01-03 10:52:19,500:INFO:plot_model() successfully completed......................................
+2024-01-03 10:52:19,531:INFO:Initializing plot_model()
+2024-01-03 10:52:19,531:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, system=True)
+2024-01-03 10:52:19,531:INFO:Checking exceptions
+2024-01-03 10:52:19,547:INFO:Preloading libraries
+2024-01-03 10:52:19,647:INFO:Copying training dataset
+2024-01-03 10:52:19,647:INFO:Plot type: feature
+2024-01-03 10:52:19,647:WARNING:No coef_ found. Trying feature_importances_
+2024-01-03 10:52:19,889:INFO:Visual Rendered Successfully
+2024-01-03 10:52:19,990:INFO:plot_model() successfully completed......................................
+2024-01-03 10:52:20,006:INFO:Initializing plot_model()
+2024-01-03 10:52:20,006:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, system=True)
+2024-01-03 10:52:20,006:INFO:Checking exceptions
+2024-01-03 10:52:20,022:INFO:Preloading libraries
+2024-01-03 10:52:20,151:INFO:Copying training dataset
+2024-01-03 10:52:20,151:INFO:Plot type: confusion_matrix
+2024-01-03 10:52:20,536:INFO:Fitting Model
+2024-01-03 10:52:20,536:INFO:Scoring test/hold-out set
+2024-01-03 10:52:20,809:INFO:Visual Rendered Successfully
+2024-01-03 10:52:20,911:INFO:plot_model() successfully completed......................................
+2024-01-03 10:52:20,929:INFO:Initializing predict_model()
+2024-01-03 10:52:20,929:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB6A6AA70>)
+2024-01-03 10:52:20,929:INFO:Checking exceptions
+2024-01-03 10:52:20,929:INFO:Preloading libraries
+2024-01-03 10:52:21,467:INFO:Initializing finalize_model()
+2024-01-03 10:52:21,467:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-01-03 10:52:21,467:INFO:Finalizing LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0)
+2024-01-03 10:52:21,483:INFO:Initializing create_model()
+2024-01-03 10:52:21,483:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(bagging_fraction=0.4, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.8,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=26, min_child_weight=0.001, min_split_gain=0,
+               n_estimators=230, n_jobs=-1, num_leaves=150, objective=None,
+               random_state=2676, reg_alpha=0.005, reg_lambda=0.3,
+               silent='warn', subsample=1.0, subsample_for_bin=200000,
+               subsample_freq=0), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 10:52:21,483:INFO:Checking exceptions
+2024-01-03 10:52:21,483:INFO:Importing libraries
+2024-01-03 10:52:21,483:INFO:Copying training dataset
+2024-01-03 10:52:21,483:INFO:Defining folds
+2024-01-03 10:52:21,483:INFO:Declaring metric variables
+2024-01-03 10:52:21,483:INFO:Importing untrained model
+2024-01-03 10:52:21,483:INFO:Declaring custom model
+2024-01-03 10:52:21,483:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 10:52:21,498:INFO:Cross validation set to False
+2024-01-03 10:52:21,498:INFO:Fitting Model
+2024-01-03 10:52:22,132:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 10:52:25,764:INFO:[LightGBM] [Warning] feature_fraction is set=0.8, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.8
+2024-01-03 10:52:25,779:INFO:[LightGBM] [Warning] bagging_fraction is set=0.4, subsample=1.0 will be ignored. Current value: bagging_fraction=0.4
+2024-01-03 10:52:25,779:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2024-01-03 10:52:27,046:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emp...
+                                colsample_bytree=1.0, feature_fraction=0.8,
+                                importance_type='split', learning_rate=0.1,
+                                max_depth=-1, min_child_samples=26,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=230, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3, silent='warn',
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0))],
+         verbose=False)
+2024-01-03 10:52:27,046:INFO:create_model() successfully completed......................................
+2024-01-03 10:52:27,131:INFO:_master_model_container: 3
+2024-01-03 10:52:27,131:INFO:_display_container: 4
+2024-01-03 10:52:27,209:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emp...
+                                colsample_bytree=1.0, feature_fraction=0.8,
+                                importance_type='split', learning_rate=0.1,
+                                max_depth=-1, min_child_samples=26,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=230, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3, silent='warn',
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0))],
+         verbose=False)
+2024-01-03 10:52:27,209:INFO:finalize_model() successfully completed......................................
+2024-01-03 10:52:27,494:INFO:Initializing predict_model()
+2024-01-03 10:52:27,494:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emp...
+                                colsample_bytree=1.0, feature_fraction=0.8,
+                                importance_type='split', learning_rate=0.1,
+                                max_depth=-1, min_child_samples=26,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=230, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3, silent='warn',
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB63F0D30>)
+2024-01-03 10:52:27,494:INFO:Checking exceptions
+2024-01-03 10:52:27,494:INFO:Preloading libraries
+2024-01-03 10:52:27,968:INFO:Initializing predict_model()
+2024-01-03 10:52:27,968:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5EA89D0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=2676, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB6A6A290>)
+2024-01-03 10:52:27,968:INFO:Checking exceptions
+2024-01-03 10:52:27,968:INFO:Preloading libraries
+2024-01-03 10:52:27,976:INFO:Set up data.
+2024-01-03 10:52:27,988:INFO:Set up index.
+2024-01-03 10:53:01,475:INFO:Initializing save_model()
+2024-01-03 10:53:01,475:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emp...
+                                colsample_bytree=1.0, feature_fraction=0.8,
+                                importance_type='split', learning_rate=0.1,
+                                max_depth=-1, min_child_samples=26,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=230, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3, silent='warn',
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0))],
+         verbose=False), model_name=Models/pycaret_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Bruno\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pess...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-01-03 10:53:01,475:INFO:Adding model into prep_pipe
+2024-01-03 10:53:01,475:WARNING:Only Model saved as it was a pipeline.
+2024-01-03 10:53:01,695:INFO:Models/pycaret_model.pkl saved in current working directory
+2024-01-03 10:53:01,778:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emp...
+                                colsample_bytree=1.0, feature_fraction=0.8,
+                                importance_type='split', learning_rate=0.1,
+                                max_depth=-1, min_child_samples=26,
+                                min_child_weight=0.001, min_split_gain=0,
+                                n_estimators=230, n_jobs=-1, num_leaves=150,
+                                objective=None, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3, silent='warn',
+                                subsample=1.0, subsample_for_bin=200000,
+                                subsample_freq=0))],
+         verbose=False)
+2024-01-03 10:53:01,778:INFO:save_model() successfully completed......................................
+2024-01-03 11:08:27,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 11:08:27,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 11:08:27,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 11:08:27,410:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2024-01-03 11:09:12,704:INFO:Initializing load_model()
+2024-01-03 11:09:12,704:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:09:35,147:INFO:Initializing load_model()
+2024-01-03 11:09:35,147:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:09:35,361:INFO:Initializing predict_model()
+2024-01-03 11:09:35,361:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3BDB9FFA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emprego_norm',
+                                             'renda_norm'],
+                                    transformer=SimpleImputer())),
+                ('...
+                                                                    random_state=2676))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.4, bagging_freq=0,
+                                feature_fraction=0.8, min_child_samples=26,
+                                min_split_gain=0, n_estimators=230,
+                                num_leaves=150, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3B7FFB370>)
+2024-01-03 11:09:35,361:INFO:Checking exceptions
+2024-01-03 11:09:35,361:INFO:Preloading libraries
+2024-01-03 11:09:35,361:INFO:Set up data.
+2024-01-03 11:09:35,418:INFO:Set up index.
+2024-01-03 11:14:48,602:INFO:Initializing load_model()
+2024-01-03 11:14:48,602:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:14:48,783:INFO:Initializing predict_model()
+2024-01-03 11:14:48,783:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3BDAF4190>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emprego_norm',
+                                             'renda_norm'],
+                                    transformer=SimpleImputer())),
+                ('...
+                                                                    random_state=2676))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.4, bagging_freq=0,
+                                feature_fraction=0.8, min_child_samples=26,
+                                min_split_gain=0, n_estimators=230,
+                                num_leaves=150, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3BDBAB010>)
+2024-01-03 11:14:48,783:INFO:Checking exceptions
+2024-01-03 11:14:48,783:INFO:Preloading libraries
+2024-01-03 11:14:48,783:INFO:Set up data.
+2024-01-03 11:14:48,849:INFO:Set up index.
+2024-01-03 11:15:48,720:INFO:Initializing load_model()
+2024-01-03 11:15:48,720:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:15:48,898:INFO:Initializing predict_model()
+2024-01-03 11:15:48,898:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3B7E33CA0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emprego_norm',
+                                             'renda_norm'],
+                                    transformer=SimpleImputer())),
+                ('...
+                                                                    random_state=2676))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.4, bagging_freq=0,
+                                feature_fraction=0.8, min_child_samples=26,
+                                min_split_gain=0, n_estimators=230,
+                                num_leaves=150, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3BDB8BD00>)
+2024-01-03 11:15:48,898:INFO:Checking exceptions
+2024-01-03 11:15:48,898:INFO:Preloading libraries
+2024-01-03 11:15:48,898:INFO:Set up data.
+2024-01-03 11:15:48,951:INFO:Set up index.
+2024-01-03 11:16:01,597:WARNING:D:\Sync\Profissional\EBAC-Curso-Cientista-de-Dados\Projetos-EBAC-Cientista-de-Dados\Projeto-Final\projeto_final.py:17: FutureWarning: save is not part of the public API, usage can give unexpected results and will be removed in a future version
+  writer.save()
+
+2024-01-03 11:17:53,056:INFO:Initializing load_model()
+2024-01-03 11:17:53,056:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:17:53,240:INFO:Initializing predict_model()
+2024-01-03 11:17:53,240:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3C6087F40>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emprego_norm',
+                                             'renda_norm'],
+                                    transformer=SimpleImputer())),
+                ('...
+                                                                    random_state=2676))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.4, bagging_freq=0,
+                                feature_fraction=0.8, min_child_samples=26,
+                                min_split_gain=0, n_estimators=230,
+                                num_leaves=150, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3BDF52A70>)
+2024-01-03 11:17:53,240:INFO:Checking exceptions
+2024-01-03 11:17:53,240:INFO:Preloading libraries
+2024-01-03 11:17:53,240:INFO:Set up data.
+2024-01-03 11:17:53,299:INFO:Set up index.
+2024-01-03 11:18:05,273:WARNING:D:\Sync\Profissional\EBAC-Curso-Cientista-de-Dados\Projetos-EBAC-Cientista-de-Dados\Projeto-Final\projeto_final.py:17: FutureWarning: save is not part of the public API, usage can give unexpected results and will be removed in a future version
+  writer.save()
+
+2024-01-03 11:18:14,717:INFO:Initializing load_model()
+2024-01-03 11:18:14,717:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 11:18:15,017:INFO:Initializing predict_model()
+2024-01-03 11:18:15,017:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3C60853F0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom', 'tempo_emprego_norm',
+                                             'renda_norm'],
+                                    transformer=SimpleImputer())),
+                ('...
+                                                                    random_state=2676))),
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.4, bagging_freq=0,
+                                feature_fraction=0.8, min_child_samples=26,
+                                min_split_gain=0, n_estimators=230,
+                                num_leaves=150, random_state=2676,
+                                reg_alpha=0.005, reg_lambda=0.3))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3BDF52A70>)
+2024-01-03 11:18:15,017:INFO:Checking exceptions
+2024-01-03 11:18:15,017:INFO:Preloading libraries
+2024-01-03 11:18:15,017:INFO:Set up data.
+2024-01-03 11:18:15,086:INFO:Set up index.
+2024-01-03 11:18:26,872:WARNING:D:\Sync\Profissional\EBAC-Curso-Cientista-de-Dados\Projetos-EBAC-Cientista-de-Dados\Projeto-Final\projeto_final.py:17: FutureWarning: save is not part of the public API, usage can give unexpected results and will be removed in a future version
+  writer.save()
+
+2024-01-03 11:26:51,118:INFO:PyCaret ClassificationExperiment
+2024-01-03 11:26:51,118:INFO:Logging name: clf-default-name
+2024-01-03 11:26:51,118:INFO:ML Usecase: MLUsecase.CLASSIFICATION
+2024-01-03 11:26:51,118:INFO:version 3.2.0
+2024-01-03 11:26:51,118:INFO:Initializing setup()
+2024-01-03 11:26:51,118:INFO:self.USI: 8fe4
+2024-01-03 11:26:51,118:INFO:self._variable_keys: {'gpu_param', 'USI', 'y', 'y_train', 'X_train', 'fold_groups_param', 'logging_param', 'target_param', 'is_multiclass', 'n_jobs_param', 'idx', '_available_plots', 'X_test', '_ml_usecase', 'exp_name_log', 'y_test', 'exp_id', 'memory', 'pipeline', 'X', 'gpu_n_jobs_param', 'fold_generator', 'fix_imbalance', 'seed', 'fold_shuffle_param', 'data', 'log_plots_param', 'html_param'}
+2024-01-03 11:26:51,118:INFO:Checking environment
+2024-01-03 11:26:51,118:INFO:python_version: 3.10.7
+2024-01-03 11:26:51,118:INFO:python_build: ('tags/v3.10.7:6cc6b13', 'Sep  5 2022 14:08:36')
+2024-01-03 11:26:51,134:INFO:machine: AMD64
+2024-01-03 11:26:51,134:INFO:platform: Windows-10-10.0.19045-SP0
+2024-01-03 11:26:51,134:INFO:Memory: svmem(total=17071636480, available=3959193600, percent=76.8, used=13112442880, free=3959193600)
+2024-01-03 11:26:51,134:INFO:Physical Core: 4
+2024-01-03 11:26:51,134:INFO:Logical Core: 8
+2024-01-03 11:26:51,134:INFO:Checking libraries
+2024-01-03 11:26:51,134:INFO:System:
+2024-01-03 11:26:51,134:INFO:    python: 3.10.7 (tags/v3.10.7:6cc6b13, Sep  5 2022, 14:08:36) [MSC v.1933 64 bit (AMD64)]
+2024-01-03 11:26:51,134:INFO:executable: D:\Python-Venvs\win-data-science\Scripts\python.exe
+2024-01-03 11:26:51,134:INFO:   machine: Windows-10-10.0.19045-SP0
+2024-01-03 11:26:51,134:INFO:PyCaret required dependencies:
+2024-01-03 11:26:51,134:INFO:                 pip: 23.3.2
+2024-01-03 11:26:51,134:INFO:          setuptools: 67.6.1
+2024-01-03 11:26:51,134:INFO:             pycaret: 3.2.0
+2024-01-03 11:26:51,134:INFO:             IPython: 8.10.0
+2024-01-03 11:26:51,134:INFO:          ipywidgets: 8.0.4
+2024-01-03 11:26:51,134:INFO:                tqdm: 4.64.1
+2024-01-03 11:26:51,134:INFO:               numpy: 1.23.5
+2024-01-03 11:26:51,134:INFO:              pandas: 1.5.3
+2024-01-03 11:26:51,134:INFO:              jinja2: 3.1.2
+2024-01-03 11:26:51,134:INFO:               scipy: 1.10.1
+2024-01-03 11:26:51,134:INFO:              joblib: 1.2.0
+2024-01-03 11:26:51,134:INFO:             sklearn: 1.2.1
+2024-01-03 11:26:51,134:INFO:                pyod: 1.1.2
+2024-01-03 11:26:51,134:INFO:            imblearn: 0.11.0
+2024-01-03 11:26:51,134:INFO:   category_encoders: 2.6.3
+2024-01-03 11:26:51,134:INFO:            lightgbm: 3.3.5
+2024-01-03 11:26:51,134:INFO:               numba: 0.58.1
+2024-01-03 11:26:51,134:INFO:            requests: 2.28.2
+2024-01-03 11:26:51,134:INFO:          matplotlib: 3.8.2
+2024-01-03 11:26:51,134:INFO:          scikitplot: 0.3.7
+2024-01-03 11:26:51,134:INFO:         yellowbrick: 1.5
+2024-01-03 11:26:51,134:INFO:              plotly: 5.14.0
+2024-01-03 11:26:51,134:INFO:    plotly-resampler: Not installed
+2024-01-03 11:26:51,134:INFO:             kaleido: 0.2.1
+2024-01-03 11:26:51,134:INFO:           schemdraw: 0.15
+2024-01-03 11:26:51,134:INFO:         statsmodels: 0.13.5
+2024-01-03 11:26:51,134:INFO:              sktime: 0.21.1
+2024-01-03 11:26:51,134:INFO:               tbats: 1.1.3
+2024-01-03 11:26:51,134:INFO:            pmdarima: 2.0.4
+2024-01-03 11:26:51,134:INFO:              psutil: 5.9.4
+2024-01-03 11:26:51,134:INFO:          markupsafe: 2.1.2
+2024-01-03 11:26:51,134:INFO:             pickle5: Not installed
+2024-01-03 11:26:51,134:INFO:         cloudpickle: 3.0.0
+2024-01-03 11:26:51,134:INFO:         deprecation: 2.1.0
+2024-01-03 11:26:51,134:INFO:              xxhash: 3.4.1
+2024-01-03 11:26:51,134:INFO:           wurlitzer: 3.0.3
+2024-01-03 11:26:51,134:INFO:PyCaret optional dependencies:
+2024-01-03 11:26:51,134:INFO:                shap: Not installed
+2024-01-03 11:26:51,134:INFO:           interpret: Not installed
+2024-01-03 11:26:51,134:INFO:                umap: Not installed
+2024-01-03 11:26:51,134:INFO:     ydata_profiling: 4.6.3
+2024-01-03 11:26:51,134:INFO:  explainerdashboard: Not installed
+2024-01-03 11:26:51,134:INFO:             autoviz: Not installed
+2024-01-03 11:26:51,134:INFO:           fairlearn: Not installed
+2024-01-03 11:26:51,134:INFO:          deepchecks: Not installed
+2024-01-03 11:26:51,134:INFO:             xgboost: 1.7.4
+2024-01-03 11:26:51,134:INFO:            catboost: Not installed
+2024-01-03 11:26:51,134:INFO:              kmodes: Not installed
+2024-01-03 11:26:51,134:INFO:             mlxtend: Not installed
+2024-01-03 11:26:51,134:INFO:       statsforecast: Not installed
+2024-01-03 11:26:51,134:INFO:        tune_sklearn: Not installed
+2024-01-03 11:26:51,134:INFO:                 ray: Not installed
+2024-01-03 11:26:51,134:INFO:            hyperopt: Not installed
+2024-01-03 11:26:51,134:INFO:              optuna: Not installed
+2024-01-03 11:26:51,134:INFO:               skopt: Not installed
+2024-01-03 11:26:51,134:INFO:              mlflow: Not installed
+2024-01-03 11:26:51,134:INFO:              gradio: Not installed
+2024-01-03 11:26:51,134:INFO:             fastapi: Not installed
+2024-01-03 11:26:51,134:INFO:             uvicorn: Not installed
+2024-01-03 11:26:51,134:INFO:              m2cgen: Not installed
+2024-01-03 11:26:51,134:INFO:           evidently: Not installed
+2024-01-03 11:26:51,134:INFO:               fugue: Not installed
+2024-01-03 11:26:51,134:INFO:           streamlit: 1.28.2
+2024-01-03 11:26:51,134:INFO:             prophet: Not installed
+2024-01-03 11:26:51,134:INFO:None
+2024-01-03 11:26:51,134:INFO:Set up data.
+2024-01-03 11:26:51,203:INFO:Set up folding strategy.
+2024-01-03 11:26:51,203:INFO:Set up train/test split.
+2024-01-03 11:26:51,219:INFO:Set up index.
+2024-01-03 11:26:51,219:INFO:Assigning column types.
+2024-01-03 11:26:51,219:INFO:Engine successfully changes for model 'lr' to 'sklearn'.
+2024-01-03 11:26:51,272:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,272:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,303:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,303:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,350:INFO:Engine for model 'knn' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,350:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,372:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,372:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,372:INFO:Engine successfully changes for model 'knn' to 'sklearn'.
+2024-01-03 11:26:51,419:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,450:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,450:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,504:INFO:Engine for model 'rbfsvm' has not been set explicitly, hence returning None.
+2024-01-03 11:26:51,519:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,535:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,535:INFO:Engine successfully changes for model 'rbfsvm' to 'sklearn'.
+2024-01-03 11:26:51,604:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,604:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,673:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:51,673:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:51,673:INFO:Preparing preprocessing pipeline...
+2024-01-03 11:26:51,689:INFO:Set up date feature engineering.
+2024-01-03 11:26:51,689:INFO:Set up simple imputation.
+2024-01-03 11:26:51,689:INFO:Set up encoding of ordinal features.
+2024-01-03 11:26:51,704:INFO:Set up encoding of categorical features.
+2024-01-03 11:26:51,704:INFO:Set up removing outliers.
+2024-01-03 11:26:51,704:INFO:Set up imbalanced handling.
+2024-01-03 11:26:51,704:INFO:Set up column transformation.
+2024-01-03 11:26:51,704:INFO:Set up feature normalization.
+2024-01-03 11:26:51,704:INFO:Set up PCA.
+2024-01-03 11:26:52,296:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:26:55,118:INFO:Finished creating preprocessing pipeline.
+2024-01-03 11:26:55,172:INFO:Pipeline: Pipeline(memory=FastMemory(location=C:\Users\Bruno\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pess...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False)
+2024-01-03 11:26:55,172:INFO:Creating final display dataframe.
+2024-01-03 11:26:55,689:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:26:58,890:INFO:Setup _display_container:                     Description             Value
+0                    Session id              1046
+1                        Target               mau
+2                   Target type            Binary
+3           Original data shape       (36153, 16)
+4        Transformed data shape        (56072, 6)
+5   Transformed train set shape        (45226, 6)
+6    Transformed test set shape        (10846, 6)
+7              Ordinal features                 3
+8              Numeric features                 7
+9                 Date features                 1
+10         Categorical features                 7
+11     Rows with missing values             18.3%
+12                   Preprocess              True
+13              Imputation type            simple
+14           Numeric imputation              mean
+15       Categorical imputation              mode
+16     Maximum one-hot encoding                25
+17              Encoding method              None
+18              Remove outliers              True
+19           Outliers threshold              0.05
+20                Fix imbalance              True
+21         Fix imbalance method             SMOTE
+22               Transformation              True
+23        Transformation method          quantile
+24                    Normalize              True
+25             Normalize method            zscore
+26                          PCA              True
+27                   PCA method            linear
+28               PCA components                 5
+29               Fold Generator   StratifiedKFold
+30                  Fold Number                10
+31                     CPU Jobs                -1
+32                      Use GPU             False
+33               Log Experiment             False
+34              Experiment Name  clf-default-name
+35                          USI              8fe4
+2024-01-03 11:26:58,975:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:58,975:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:59,060:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:59,060:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:59,060:INFO:setup() successfully completed in 7.94s...............
+2024-01-03 11:26:59,060:INFO:gpu_param set to False
+2024-01-03 11:26:59,144:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:59,144:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:59,222:INFO:Soft dependency imported: xgboost: 1.7.4
+2024-01-03 11:26:59,229:WARNING:
+'catboost' is a soft dependency and not included in the pycaret installation. Please run: `pip install catboost` to install.
+Alternately, you can install this by running `pip install pycaret[models]`
+2024-01-03 11:26:59,245:INFO:Initializing create_model()
+2024-01-03 11:26:59,245:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=lightgbm, fold=None, round=4, cross_validation=True, predict=True, fit_kwargs=None, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=True, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 11:26:59,245:INFO:Checking exceptions
+2024-01-03 11:26:59,260:INFO:Importing libraries
+2024-01-03 11:26:59,260:INFO:Copying training dataset
+2024-01-03 11:26:59,276:INFO:Defining folds
+2024-01-03 11:26:59,276:INFO:Declaring metric variables
+2024-01-03 11:26:59,276:INFO:Importing untrained model
+2024-01-03 11:26:59,292:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 11:26:59,307:INFO:Starting cross validation
+2024-01-03 11:26:59,307:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 11:27:07,242:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,263:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,293:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,314:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,385:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,415:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,610:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:07,702:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:19,319:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:19,421:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:22,861:INFO:Calculating mean and std
+2024-01-03 11:27:22,861:INFO:Creating metrics dataframe
+2024-01-03 11:27:22,871:INFO:Finalizing model
+2024-01-03 11:27:23,354:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:26,124:INFO:Uploading results into container
+2024-01-03 11:27:26,124:INFO:Uploading model into container now
+2024-01-03 11:27:26,144:INFO:_master_model_container: 1
+2024-01-03 11:27:26,144:INFO:_display_container: 2
+2024-01-03 11:27:26,144:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 11:27:26,144:INFO:create_model() successfully completed......................................
+2024-01-03 11:27:26,487:INFO:Initializing tune_model()
+2024-01-03 11:27:26,487:INFO:tune_model(estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, n_iter=10, custom_grid=None, optimize=AUC, custom_scorer=None, search_library=scikit-learn, search_algorithm=None, early_stopping=False, early_stopping_max_iters=10, choose_better=True, fit_kwargs=None, groups=None, return_tuner=False, verbose=True, tuner_verbose=True, return_train_score=False, kwargs={}, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>)
+2024-01-03 11:27:26,487:INFO:Checking exceptions
+2024-01-03 11:27:26,518:INFO:Copying training dataset
+2024-01-03 11:27:26,534:INFO:Checking base model
+2024-01-03 11:27:26,534:INFO:Base model : Light Gradient Boosting Machine
+2024-01-03 11:27:26,534:INFO:Declaring metric variables
+2024-01-03 11:27:26,534:INFO:Defining Hyperparameters
+2024-01-03 11:27:26,649:INFO:Tuning with n_jobs=-1
+2024-01-03 11:27:26,649:INFO:Initializing RandomizedSearchCV
+2024-01-03 11:27:27,996:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,017:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,025:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,037:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,047:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,066:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,109:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:28,109:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,229:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,250:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,301:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,311:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,362:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,484:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,484:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:39,484:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,213:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,490:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,500:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,500:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,919:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:50,989:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:51,081:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:27:51,114:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:01,426:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:01,805:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,000:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,051:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,367:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,459:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,531:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:02,592:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:12,346:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:12,817:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:13,085:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:13,186:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:13,522:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:13,534:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:15,565:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:15,637:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:24,218:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:25,005:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:25,435:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:25,761:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:26,109:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:26,355:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:28,202:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:28,222:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:35,152:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:36,203:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:36,861:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:38,149:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:38,343:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:38,568:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:39,871:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:39,951:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:45,768:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:47,690:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:47,977:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:49,906:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:49,955:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:50,295:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:51,496:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:51,773:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:57,378:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:28:59,972:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:00,113:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:01,405:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:03,105:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:03,804:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:04,142:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:05,804:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:10,130:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:11,885:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:11,926:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:13,761:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:15,196:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:15,802:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:16,315:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:16,510:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:20,924:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:22,557:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:22,719:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:24,889:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:26,580:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:27,166:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:27,780:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:28,160:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:32,828:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:34,326:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:34,982:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:36,816:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:38,478:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:39,132:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:39,943:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:40,331:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:44,479:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:45,955:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:46,673:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:48,494:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:54,847:INFO:best_params: {'actual_estimator__reg_lambda': 1e-06, 'actual_estimator__reg_alpha': 0.005, 'actual_estimator__num_leaves': 200, 'actual_estimator__n_estimators': 170, 'actual_estimator__min_split_gain': 0.9, 'actual_estimator__min_child_samples': 100, 'actual_estimator__learning_rate': 0.3, 'actual_estimator__feature_fraction': 0.9, 'actual_estimator__bagging_freq': 0, 'actual_estimator__bagging_fraction': 0.8}
+2024-01-03 11:29:54,847:INFO:Hyperparameter search completed
+2024-01-03 11:29:54,847:INFO:SubProcess create_model() called ==================================
+2024-01-03 11:29:54,847:INFO:Initializing create_model()
+2024-01-03 11:29:54,852:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=True, system=False, add_to_model_list=True, metrics=None, display=<pycaret.internal.display.display.CommonDisplay object at 0x0000018CB211E920>, model_only=True, return_train_score=False, error_score=0.0, kwargs={'reg_lambda': 1e-06, 'reg_alpha': 0.005, 'num_leaves': 200, 'n_estimators': 170, 'min_split_gain': 0.9, 'min_child_samples': 100, 'learning_rate': 0.3, 'feature_fraction': 0.9, 'bagging_freq': 0, 'bagging_fraction': 0.8})
+2024-01-03 11:29:54,852:INFO:Checking exceptions
+2024-01-03 11:29:54,852:INFO:Importing libraries
+2024-01-03 11:29:54,852:INFO:Copying training dataset
+2024-01-03 11:29:54,877:INFO:Defining folds
+2024-01-03 11:29:54,877:INFO:Declaring metric variables
+2024-01-03 11:29:54,881:INFO:Importing untrained model
+2024-01-03 11:29:54,881:INFO:Declaring custom model
+2024-01-03 11:29:54,892:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 11:29:54,899:INFO:Starting cross validation
+2024-01-03 11:29:54,917:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 11:29:56,531:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,651:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,715:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,735:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,777:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,852:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,922:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:29:56,957:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:07,168:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:07,404:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:11,012:INFO:Calculating mean and std
+2024-01-03 11:30:11,012:INFO:Creating metrics dataframe
+2024-01-03 11:30:11,020:INFO:Finalizing model
+2024-01-03 11:30:11,539:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:14,183:INFO:Uploading results into container
+2024-01-03 11:30:14,191:INFO:Uploading model into container now
+2024-01-03 11:30:14,193:INFO:_master_model_container: 2
+2024-01-03 11:30:14,193:INFO:_display_container: 3
+2024-01-03 11:30:14,193:INFO:LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 11:30:14,193:INFO:create_model() successfully completed......................................
+2024-01-03 11:30:14,305:INFO:SubProcess create_model() end ==================================
+2024-01-03 11:30:14,305:INFO:choose_better activated
+2024-01-03 11:30:14,315:INFO:SubProcess create_model() called ==================================
+2024-01-03 11:30:14,315:INFO:Initializing create_model()
+2024-01-03 11:30:14,315:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), fold=StratifiedKFold(n_splits=10, random_state=None, shuffle=False), round=4, cross_validation=True, predict=True, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=True, metrics=None, display=None, model_only=True, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 11:30:14,315:INFO:Checking exceptions
+2024-01-03 11:30:14,315:INFO:Importing libraries
+2024-01-03 11:30:14,315:INFO:Copying training dataset
+2024-01-03 11:30:14,333:INFO:Defining folds
+2024-01-03 11:30:14,333:INFO:Declaring metric variables
+2024-01-03 11:30:14,333:INFO:Importing untrained model
+2024-01-03 11:30:14,333:INFO:Declaring custom model
+2024-01-03 11:30:14,335:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 11:30:14,335:INFO:Starting cross validation
+2024-01-03 11:30:14,345:INFO:Cross validating with StratifiedKFold(n_splits=10, random_state=None, shuffle=False), n_jobs=-1
+2024-01-03 11:30:15,745:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,755:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,806:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,806:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,826:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,836:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,845:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:15,847:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:26,379:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:26,399:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:29,745:INFO:Calculating mean and std
+2024-01-03 11:30:29,745:INFO:Creating metrics dataframe
+2024-01-03 11:30:29,745:INFO:Finalizing model
+2024-01-03 11:30:30,226:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:32,806:INFO:Uploading results into container
+2024-01-03 11:30:32,806:INFO:Uploading model into container now
+2024-01-03 11:30:32,806:INFO:_master_model_container: 3
+2024-01-03 11:30:32,806:INFO:_display_container: 4
+2024-01-03 11:30:32,806:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 11:30:32,806:INFO:create_model() successfully completed......................................
+2024-01-03 11:30:32,901:INFO:SubProcess create_model() end ==================================
+2024-01-03 11:30:32,901:INFO:LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0) result for AUC is 0.8577
+2024-01-03 11:30:32,909:INFO:LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) result for AUC is 0.874
+2024-01-03 11:30:32,909:INFO:LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0) is best model
+2024-01-03 11:30:32,909:INFO:choose_better completed
+2024-01-03 11:30:32,919:INFO:_master_model_container: 3
+2024-01-03 11:30:32,919:INFO:_display_container: 3
+2024-01-03 11:30:32,919:INFO:LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 11:30:32,919:INFO:tune_model() successfully completed......................................
+2024-01-03 11:30:33,060:INFO:Initializing plot_model()
+2024-01-03 11:30:33,060:INFO:plot_model(plot=auc, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, system=True)
+2024-01-03 11:30:33,060:INFO:Checking exceptions
+2024-01-03 11:30:33,092:INFO:Preloading libraries
+2024-01-03 11:30:33,107:INFO:Copying training dataset
+2024-01-03 11:30:33,107:INFO:Plot type: auc
+2024-01-03 11:30:33,408:INFO:Fitting Model
+2024-01-03 11:30:33,424:INFO:Scoring test/hold-out set
+2024-01-03 11:30:33,665:INFO:Visual Rendered Successfully
+2024-01-03 11:30:33,768:INFO:plot_model() successfully completed......................................
+2024-01-03 11:30:33,788:INFO:Initializing plot_model()
+2024-01-03 11:30:33,788:INFO:plot_model(plot=pr, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, system=True)
+2024-01-03 11:30:33,788:INFO:Checking exceptions
+2024-01-03 11:30:33,796:INFO:Preloading libraries
+2024-01-03 11:30:33,809:INFO:Copying training dataset
+2024-01-03 11:30:33,809:INFO:Plot type: pr
+2024-01-03 11:30:34,114:INFO:Fitting Model
+2024-01-03 11:30:34,122:INFO:Scoring test/hold-out set
+2024-01-03 11:30:34,328:INFO:Visual Rendered Successfully
+2024-01-03 11:30:34,418:INFO:plot_model() successfully completed......................................
+2024-01-03 11:30:34,439:INFO:Initializing plot_model()
+2024-01-03 11:30:34,439:INFO:plot_model(plot=feature, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, system=True)
+2024-01-03 11:30:34,439:INFO:Checking exceptions
+2024-01-03 11:30:34,454:INFO:Preloading libraries
+2024-01-03 11:30:34,454:INFO:Copying training dataset
+2024-01-03 11:30:34,454:INFO:Plot type: feature
+2024-01-03 11:30:34,454:WARNING:No coef_ found. Trying feature_importances_
+2024-01-03 11:30:34,717:INFO:Visual Rendered Successfully
+2024-01-03 11:30:34,802:INFO:plot_model() successfully completed......................................
+2024-01-03 11:30:34,818:INFO:Initializing plot_model()
+2024-01-03 11:30:34,818:INFO:plot_model(plot=confusion_matrix, fold=None, verbose=True, display=None, display_format=None, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), feature_name=None, fit_kwargs=None, groups=None, label=False, plot_kwargs=None, save=False, scale=1, self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, system=True)
+2024-01-03 11:30:34,818:INFO:Checking exceptions
+2024-01-03 11:30:34,818:INFO:Preloading libraries
+2024-01-03 11:30:34,840:INFO:Copying training dataset
+2024-01-03 11:30:34,840:INFO:Plot type: confusion_matrix
+2024-01-03 11:30:35,187:INFO:Fitting Model
+2024-01-03 11:30:35,187:INFO:Scoring test/hold-out set
+2024-01-03 11:30:35,326:INFO:Visual Rendered Successfully
+2024-01-03 11:30:35,420:INFO:plot_model() successfully completed......................................
+2024-01-03 11:30:35,441:INFO:Initializing predict_model()
+2024-01-03 11:30:35,441:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB65F1E10>)
+2024-01-03 11:30:35,441:INFO:Checking exceptions
+2024-01-03 11:30:35,441:INFO:Preloading libraries
+2024-01-03 11:30:35,805:INFO:Initializing finalize_model()
+2024-01-03 11:30:35,805:INFO:finalize_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fit_kwargs=None, groups=None, model_only=False, experiment_custom_tags=None)
+2024-01-03 11:30:35,805:INFO:Finalizing LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0)
+2024-01-03 11:30:35,805:INFO:Initializing create_model()
+2024-01-03 11:30:35,805:INFO:create_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(bagging_fraction=0.8, bagging_freq=0, boosting_type='gbdt',
+               class_weight=None, colsample_bytree=1.0, feature_fraction=0.9,
+               importance_type='split', learning_rate=0.3, max_depth=-1,
+               min_child_samples=100, min_child_weight=0.001,
+               min_split_gain=0.9, n_estimators=170, n_jobs=-1, num_leaves=200,
+               objective=None, random_state=1046, reg_alpha=0.005,
+               reg_lambda=1e-06, silent='warn', subsample=1.0,
+               subsample_for_bin=200000, subsample_freq=0), fold=None, round=4, cross_validation=False, predict=False, fit_kwargs={}, groups=None, refit=True, probability_threshold=None, experiment_custom_tags=None, verbose=False, system=False, add_to_model_list=False, metrics=None, display=None, model_only=False, return_train_score=False, error_score=0.0, kwargs={})
+2024-01-03 11:30:35,805:INFO:Checking exceptions
+2024-01-03 11:30:35,820:INFO:Importing libraries
+2024-01-03 11:30:35,820:INFO:Copying training dataset
+2024-01-03 11:30:35,820:INFO:Defining folds
+2024-01-03 11:30:35,820:INFO:Declaring metric variables
+2024-01-03 11:30:35,820:INFO:Importing untrained model
+2024-01-03 11:30:35,820:INFO:Declaring custom model
+2024-01-03 11:30:35,820:INFO:Light Gradient Boosting Machine Imported successfully
+2024-01-03 11:30:35,820:INFO:Cross validation set to False
+2024-01-03 11:30:35,836:INFO:Fitting Model
+2024-01-03 11:30:36,445:WARNING:D:\Python-Venvs\win-data-science\lib\site-packages\sklearn\base.py:420: UserWarning: X does not have valid feature names, but IsolationForest was fitted with feature names
+  warnings.warn(
+
+2024-01-03 11:30:39,989:INFO:[LightGBM] [Warning] feature_fraction is set=0.9, colsample_bytree=1.0 will be ignored. Current value: feature_fraction=0.9
+2024-01-03 11:30:39,989:INFO:[LightGBM] [Warning] bagging_fraction is set=0.8, subsample=1.0 will be ignored. Current value: bagging_fraction=0.8
+2024-01-03 11:30:39,989:INFO:[LightGBM] [Warning] bagging_freq is set=0, subsample_freq=0 will be ignored. Current value: bagging_freq=0
+2024-01-03 11:30:40,291:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                                colsample_bytree=1.0, feature_fraction=0.9,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=100,
+                                min_child_weight=0.001, min_split_gain=0.9,
+                                n_estimators=170, n_jobs=-1, num_leaves=200,
+                                objective=None, random_state=1046,
+                                reg_alpha=0.005, reg_lambda=1e-06,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-01-03 11:30:40,291:INFO:create_model() successfully completed......................................
+2024-01-03 11:30:40,374:INFO:_master_model_container: 3
+2024-01-03 11:30:40,374:INFO:_display_container: 4
+2024-01-03 11:30:40,439:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                                colsample_bytree=1.0, feature_fraction=0.9,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=100,
+                                min_child_weight=0.001, min_split_gain=0.9,
+                                n_estimators=170, n_jobs=-1, num_leaves=200,
+                                objective=None, random_state=1046,
+                                reg_alpha=0.005, reg_lambda=1e-06,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-01-03 11:30:40,439:INFO:finalize_model() successfully completed......................................
+2024-01-03 11:30:40,671:INFO:Initializing predict_model()
+2024-01-03 11:30:40,671:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                                colsample_bytree=1.0, feature_fraction=0.9,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=100,
+                                min_child_weight=0.001, min_split_gain=0.9,
+                                n_estimators=170, n_jobs=-1, num_leaves=200,
+                                objective=None, random_state=1046,
+                                reg_alpha=0.005, reg_lambda=1e-06,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB6A47760>)
+2024-01-03 11:30:40,671:INFO:Checking exceptions
+2024-01-03 11:30:40,671:INFO:Preloading libraries
+2024-01-03 11:30:41,028:INFO:Initializing predict_model()
+2024-01-03 11:30:41,028:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB65F1E10>)
+2024-01-03 11:30:41,028:INFO:Checking exceptions
+2024-01-03 11:30:41,028:INFO:Preloading libraries
+2024-01-03 11:30:41,028:INFO:Set up data.
+2024-01-03 11:30:41,046:INFO:Set up index.
+2024-01-03 11:30:41,941:INFO:Initializing save_model()
+2024-01-03 11:30:41,941:INFO:save_model(model=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                                colsample_bytree=1.0, feature_fraction=0.9,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=100,
+                                min_child_weight=0.001, min_split_gain=0.9,
+                                n_estimators=170, n_jobs=-1, num_leaves=200,
+                                objective=None, random_state=1046,
+                                reg_alpha=0.005, reg_lambda=1e-06,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False), model_name=Models/pycaret_model, prep_pipe_=Pipeline(memory=FastMemory(location=C:\Users\Bruno\AppData\Local\Temp\joblib),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pess...
+                 TransformerWrapper(exclude=None, include=None,
+                                    transformer=StandardScaler(copy=True,
+                                                               with_mean=True,
+                                                               with_std=True))),
+                ('pca',
+                 TransformerWrapper(exclude=[], include=None,
+                                    transformer=PCA(copy=True,
+                                                    iterated_power='auto',
+                                                    n_components=5,
+                                                    n_oversamples=10,
+                                                    power_iteration_normalizer='auto',
+                                                    random_state=None,
+                                                    svd_solver='auto', tol=0.0,
+                                                    whiten=False)))],
+         verbose=False), verbose=True, use_case=MLUsecase.CLASSIFICATION, kwargs={})
+2024-01-03 11:30:41,941:INFO:Adding model into prep_pipe
+2024-01-03 11:30:41,941:WARNING:Only Model saved as it was a pipeline.
+2024-01-03 11:30:41,995:INFO:Models/pycaret_model.pkl saved in current working directory
+2024-01-03 11:30:42,080:INFO:Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(exclude=None, include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures(features=['day',
+                                                                                  'month',
+                                                                                  'year']))),
+                ('numerical_imputer',
+                 TransformerWrapper(exclude=None,
+                                    include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transform...
+                                colsample_bytree=1.0, feature_fraction=0.9,
+                                importance_type='split', learning_rate=0.3,
+                                max_depth=-1, min_child_samples=100,
+                                min_child_weight=0.001, min_split_gain=0.9,
+                                n_estimators=170, n_jobs=-1, num_leaves=200,
+                                objective=None, random_state=1046,
+                                reg_alpha=0.005, reg_lambda=1e-06,
+                                silent='warn', subsample=1.0,
+                                subsample_for_bin=200000, subsample_freq=0))],
+         verbose=False)
+2024-01-03 11:30:42,080:INFO:save_model() successfully completed......................................
+2024-01-03 12:03:53,968:INFO:Initializing predict_model()
+2024-01-03 12:03:53,968:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x0000018CB5C576A0>, estimator=LGBMClassifier(boosting_type='gbdt', class_weight=None, colsample_bytree=1.0,
+               importance_type='split', learning_rate=0.1, max_depth=-1,
+               min_child_samples=20, min_child_weight=0.001, min_split_gain=0.0,
+               n_estimators=100, n_jobs=-1, num_leaves=31, objective=None,
+               random_state=1046, reg_alpha=0.0, reg_lambda=0.0, silent='warn',
+               subsample=1.0, subsample_for_bin=200000, subsample_freq=0), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x0000018CB003FD00>)
+2024-01-03 12:03:53,968:INFO:Checking exceptions
+2024-01-03 12:03:53,968:INFO:Preloading libraries
+2024-01-03 12:06:13,256:INFO:Initializing load_model()
+2024-01-03 12:06:13,256:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 12:06:13,387:INFO:Initializing predict_model()
+2024-01-03 12:06:13,387:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3B8025A50>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWr...
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.8, bagging_freq=0,
+                                feature_fraction=0.9, learning_rate=0.3,
+                                min_child_samples=100, min_split_gain=0.9,
+                                n_estimators=170, num_leaves=200,
+                                random_state=1046, reg_alpha=0.005,
+                                reg_lambda=1e-06))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3B7E5C3A0>)
+2024-01-03 12:06:13,387:INFO:Checking exceptions
+2024-01-03 12:06:13,387:INFO:Preloading libraries
+2024-01-03 12:06:13,387:INFO:Set up data.
+2024-01-03 12:06:13,442:INFO:Set up index.
+2024-01-03 12:06:24,456:WARNING:D:\Sync\Profissional\EBAC-Curso-Cientista-de-Dados\Projetos-EBAC-Cientista-de-Dados\Projeto-Final\projeto_final.py:17: FutureWarning: save is not part of the public API, usage can give unexpected results and will be removed in a future version
+  df.to_excel(writer, index=False, sheet_name='Sheet1')
+
+2024-01-03 12:06:32,032:INFO:Initializing load_model()
+2024-01-03 12:06:32,032:INFO:load_model(model_name=Models/pycaret_model, platform=None, authentication=None, verbose=True)
+2024-01-03 12:06:32,300:INFO:Initializing predict_model()
+2024-01-03 12:06:32,300:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000002E3BDB9E320>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('date_feature_extractor',
+                 TransformerWrapper(include=['data_ref'],
+                                    transformer=ExtractDateTimeFeatures())),
+                ('numerical_imputer',
+                 TransformerWrapper(include=['index', 'qtd_filhos', 'idade',
+                                             'tempo_emprego',
+                                             'qt_pessoas_residencia', 'renda',
+                                             'bom'],
+                                    transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWr...
+                ('normalize', TransformerWrapper(transformer=StandardScaler())),
+                ('pca',
+                 TransformerWrapper(exclude=[],
+                                    transformer=PCA(n_components=5))),
+                ('actual_estimator',
+                 LGBMClassifier(bagging_fraction=0.8, bagging_freq=0,
+                                feature_fraction=0.9, learning_rate=0.3,
+                                min_child_samples=100, min_split_gain=0.9,
+                                n_estimators=170, num_leaves=200,
+                                random_state=1046, reg_alpha=0.005,
+                                reg_lambda=1e-06))]), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000002E3BE53CEE0>)
+2024-01-03 12:06:32,300:INFO:Checking exceptions
+2024-01-03 12:06:32,300:INFO:Preloading libraries
+2024-01-03 12:06:32,300:INFO:Set up data.
+2024-01-03 12:06:32,362:INFO:Set up index.
+2024-01-03 12:06:43,969:WARNING:D:\Sync\Profissional\EBAC-Curso-Cientista-de-Dados\Projetos-EBAC-Cientista-de-Dados\Projeto-Final\projeto_final.py:17: FutureWarning: save is not part of the public API, usage can give unexpected results and will be removed in a future version
+  df.to_excel(writer, index=False, sheet_name='Sheet1')
+
