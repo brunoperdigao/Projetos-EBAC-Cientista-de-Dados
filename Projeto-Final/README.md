@@ -34,6 +34,10 @@ O projeto abrange as seguintes etapas:
    
    - Disponibilidade de um arquivo "projeto_final.py" de Streamlit.
    - Permite carregar a base de dados e gerar uma planilha com os valores previstos.
+     
+https://github.com/brunoperdigao/Projetos-EBAC-Cientista-de-Dados/assets/57102715/c36844d5-0f48-4da6-9511-6e75a4492f00
+
+
 
 ## Estrutura do Repositório
 
@@ -54,4 +58,4 @@ Isso abrirá a aplicação no navegador padrão, permitindo a interação com a 
 
 ## Agradecimentos
 
-Agradecemos à EBAC pela oportunidade de aprendizado e formação.
+Agradeço à EBAC pela oportunidade de aprendizado e formação.
